@@ -1,10 +1,16 @@
+use colored::*;
+
 fn main() {
     let args: Vec<String> = std::env::args().collect();
 
     if args.len() != 4 {
         eprintln!(
-            "Usage: {} <trips_per_week> <monthly_cost> <ticket_price>",
-            args[0]
+            "{}",
+            format!(
+                "Usage: {} <trips/week> <monthly_cost> <ticket_price>",
+                args[0]
+            )
+            .red()
         );
         std::process::exit(1);
     }
@@ -19,13 +25,56 @@ fn main() {
 
     let individual_cost = full_price_count * ticket_price + discounted_count * (ticket_price / 2);
 
-    println!("Total trips per month: {}", total_trips);
-    println!("Individual cost: {}", individual_cost);
-    println!("Monthly pass cost: {}", monthly_cost);
+    println!(
+        "\n╭{}╴{}╴{}╴{}╴╮",
+        "─".repeat(14),
+        "─".repeat(10),
+        "─".repeat(14),
+        "─".repeat(17)
+    );
+    println!(
+        "│ {:14} │ {:10} │ {:14} │ {:10} │",
+        "Total trips".cyan().bold(),
+        "Monthly".cyan().bold(),
+        "Individual".cyan().bold(),
+        "Ticket".cyan().bold()
+    );
+    println!(
+        "│ {:14} │ {:>10} │ {:>14} │ {:>10} │",
+        format!("{}", total_trips).yellow(),
+        format!("{} RUB", monthly_cost).yellow(),
+        format!("{} RUB", individual_cost).yellow(),
+        format!("{} RUB", ticket_price).yellow()
+    );
+    println!(
+        "╰{}╴{}╴{}╴{}╯",
+        "─".repeat(14),
+        "─".repeat(10),
+        "─".repeat(14),
+        "─".repeat(18)
+    );
 
-    match individual_cost.cmp(&monthly_cost) {
-        std::cmp::Ordering::Less => println!("Paying per trip is cheaper!"),
-        std::cmp::Ordering::Greater => println!("Buying the monthly pass is cheaper!"),
-        std::cmp::Ordering::Equal => println!("Both options cost the same."),
-    }
+    let message = match individual_cost.cmp(&monthly_cost) {
+        std::cmp::Ordering::Less => format!(
+            "🚌 Paying per trip is cheaper by {} RUB!",
+            monthly_cost - individual_cost
+        )
+        .green()
+        .bold(),
+        std::cmp::Ordering::Greater => format!(
+            "💰 Monthly pass saves you {} RUB!",
+            individual_cost - monthly_cost
+        )
+        .bright_green()
+        .bold(),
+        std::cmp::Ordering::Equal => "⚖️  Both options cost the same".blue().bold(),
+    };
+
+    println!("\n{}\n", message);
+
+    // Add explanation of discount logic
+    println!("{}", "Note:".bold().underline());
+    println!("• Subsequent trips within 90 minutes get 50% discount");
+    println!("• Discounted prices are rounded down (e.g., 63 → 31)");
+    println!("• Calculation assumes optimal discount usage");
 }

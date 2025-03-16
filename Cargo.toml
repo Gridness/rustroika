@@ -2,6 +2,9 @@
 name = "rustroika"
 version = "1.0.0"
 edition = "2024"
+license = "Apache-2.0"
+description = "A utility to compare public transport costs"
+authors = ["Ivan King"]
 
 [dependencies]
 colored = "3.0.0"

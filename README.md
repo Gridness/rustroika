@@ -35,19 +35,24 @@ cargo build --release
 ## Usage
 
 ```bash
-rustroika <trips/week> <monthly_cost> <ticket_price>
+rustroika --trips-week|-t <trips/week> --monthly-cost|-m <monthly_cost> --ticket-price|-p <ticket_price>
 ```
 
 ### Parameters
 
-- `trips/week`: Number of trips you make per week
-- `monthly_cost`: Cost of the monthly pass in RUB
-- `ticket_price`: Cost of a single ticket in RUB
+- `--trips-week` or `-t`: Number of trips you make per week
+- `--monthly-cost` or `-m`: Cost of the monthly pass in RUB
+- `--ticket-price` or `-p`: Cost of a single ticket in RUB
 
 ### Example
 
 ```bash
-rustroika 10 2900 63
+rustroika --trips-week 10 --monthly-cost 2900 --ticket-price 63
+```
+
+Or using short flags:
+```bash
+rustroika -t 10 -m 2900 -p 63
 ```
 
 This example calculates costs for:

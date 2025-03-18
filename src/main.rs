@@ -1,13 +1,54 @@
 use colored::*;
+use std::env;
 
 fn main() {
-    let args: Vec<String> = std::env::args().collect();
+    let args: Vec<String> = env::args().collect();
+    let mut trips_per_week: Option<u32> = None;
+    let mut monthly_cost: Option<u32> = None;
+    let mut ticket_price: Option<u32> = None;
 
-    if args.len() != 4 {
+    let mut i = 1;
+    while i < args.len() {
+        match args[i].as_str() {
+            "--trips-week" | "-t" => {
+                if i + 1 < args.len() {
+                    trips_per_week = Some(args[i + 1].parse().expect("Invalid trips per week"));
+                    i += 2;
+                } else {
+                    eprintln!("{}", "Missing value for trips per week".red());
+                    std::process::exit(1);
+                }
+            }
+            "--monthly-cost" | "-m" => {
+                if i + 1 < args.len() {
+                    monthly_cost = Some(args[i + 1].parse().expect("Invalid monthly cost"));
+                    i += 2;
+                } else {
+                    eprintln!("{}", "Missing value for monthly cost".red());
+                    std::process::exit(1);
+                }
+            }
+            "--ticket-price" | "-p" => {
+                if i + 1 < args.len() {
+                    ticket_price = Some(args[i + 1].parse().expect("Invalid ticket price"));
+                    i += 2;
+                } else {
+                    eprintln!("{}", "Missing value for ticket price".red());
+                    std::process::exit(1);
+                }
+            }
+            _ => {
+                eprintln!("{}", format!("Unknown argument: {}", args[i]).red());
+                i += 1;
+            }
+        }
+    }
+
+    if trips_per_week.is_none() || monthly_cost.is_none() || ticket_price.is_none() {
         eprintln!(
             "{}",
             format!(
-                "Usage: {} <trips/week> <monthly_cost> <ticket_price>",
+                "Usage: {} --trips-week|-t <trips/week> --monthly-cost|-m <monthly_cost> --ticket-price|-p <ticket_price>",
                 args[0]
             )
             .red()
@@ -15,9 +56,9 @@ fn main() {
         std::process::exit(1);
     }
 
-    let trips_per_week: u32 = args[1].parse().expect("Invalid trips per week");
-    let monthly_cost: u32 = args[2].parse().expect("Invalid monthly cost");
-    let ticket_price: u32 = args[3].parse().expect("Invalid ticket price");
+    let trips_per_week = trips_per_week.unwrap();
+    let monthly_cost = monthly_cost.unwrap();
+    let ticket_price = ticket_price.unwrap();
 
     let total_trips = trips_per_week * 4;
     let full_price_count = (total_trips + 1) / 2;

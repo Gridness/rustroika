@@ -21,7 +21,7 @@ fn main() {
     let args = Args::parse();
 
     let total_trips = args.trips_per_week * 4;
-    let full_price_count = (total_trips + 1) / 2;
+    let full_price_count = total_trips.div_ceil(2);
     let discounted_count = total_trips / 2;
 
     let individual_cost =

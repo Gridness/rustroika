@@ -2,7 +2,7 @@
 name = "rustroika"
 version = "2.1.0"
 edition = "2024"
-license = "MIT or Apache-2.0"
+license = "MIT OR Apache-2.0"
 description = "A utility to compare public transport costs"
 authors = ["Ivan 'oosama' King"]
 

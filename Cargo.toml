@@ -1,12 +1,12 @@
 [package]
 name = "rustroika"
-version = "2.0.0"
+version = "2.1.0"
 edition = "2024"
 license = "MIT or Apache-2.0"
 description = "A utility to compare public transport costs"
-authors = ["Ivan King"]
+authors = ["Ivan 'oosama' King"]
 
 [dependencies]
-clap = { version = "4.5.35", features = ["derive"] }
+clap = { version = "4.5.35", features = ["derive", "cargo"] }
 clap_derive = { version = "4.0.0-rc.1" }
 colored = "3.0.0"

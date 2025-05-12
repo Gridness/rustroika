@@ -27,34 +27,60 @@ fn main() {
     let individual_cost =
         full_price_count * args.ticket_price + discounted_count * (args.ticket_price / 2);
 
-    println!(
-        "\n╭{}╴{}╴{}╴{}╴╮",
-        "─".repeat(14),
-        "─".repeat(10),
-        "─".repeat(14),
-        "─".repeat(17)
-    );
-    println!(
-        "│ {:14} │ {:10} │ {:14} │ {:10} │",
-        "Total trips".cyan().bold(),
-        "Monthly".cyan().bold(),
-        "Individual".cyan().bold(),
-        "Ticket".cyan().bold()
-    );
-    println!(
-        "│ {:14} │ {:>10} │ {:>14} │ {:>10} │",
-        format!("{}", total_trips).yellow(),
-        format!("{} RUB", args.monthly_cost).yellow(),
-        format!("{} RUB", individual_cost).yellow(),
-        format!("{} RUB", args.ticket_price).yellow()
-    );
-    println!(
-        "╰{}╴{}╴{}╴{}╯",
-        "─".repeat(14),
-        "─".repeat(10),
-        "─".repeat(14),
-        "─".repeat(18)
-    );
+    let col1_data_plain = total_trips.to_string();
+    let col2_data_plain = format!("{} RUB", args.monthly_cost);
+    let col3_data_plain = format!("{} RUB", individual_cost);
+    let col4_data_plain = format!("{} RUB", args.ticket_price);
+
+    let headers = ["Total Trips", "Monthly", "Individual", "Tciket"];
+    let data = [
+        &col1_data_plain,
+        &col2_data_plain,
+        &col3_data_plain,
+        &col4_data_plain,
+    ];
+    let col_widths: Vec<usize> = headers
+        .iter()
+        .zip(data.iter())
+        .map(|(h, d)| h.len().max(d.len()))
+        .collect();
+
+    let make_border = |left: &str, middle: &str, right: &str| {
+        let mut parts = Vec::new();
+        for &w in &col_widths {
+            parts.push("─".repeat(w + 2));
+        }
+        format!("{}{}{}", left, parts.join(middle), right)
+    };
+
+    let top_border = make_border("╭", "┬", "╮");
+    let middle_border = make_border("├", "┼", "┤");
+    let bottom_border = make_border("╰", "┴", "╯");
+
+    let header_row = headers
+        .iter()
+        .enumerate()
+        .map(|(i, &h)| format!(" {:^width$} ", h.cyan().bold(), width = col_widths[i]))
+        .collect::<Vec<_>>()
+        .join("│");
+
+    let data_row = [
+        col1_data_plain.yellow(),
+        col2_data_plain.yellow(),
+        col3_data_plain.yellow(),
+        col4_data_plain.yellow(),
+    ]
+    .iter()
+    .enumerate()
+    .map(|(i, cell)| format!(" {:^width$} ", cell, width = col_widths[i]))
+    .collect::<Vec<_>>()
+    .join("│");
+
+    println!("\n{}", top_border);
+    println!("│{}│", header_row);
+    println!("{}", middle_border);
+    println!("│{}│", data_row);
+    println!("{}", bottom_border);
 
     let message = match individual_cost.cmp(&args.monthly_cost) {
         std::cmp::Ordering::Less => format!(

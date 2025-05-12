@@ -32,7 +32,7 @@ fn main() {
     let col3_data_plain = format!("{} RUB", individual_cost);
     let col4_data_plain = format!("{} RUB", args.ticket_price);
 
-    let headers = ["Total Trips", "Monthly", "Individual", "Tciket"];
+    let headers = ["Total Trips", "Monthly", "Individual", "Ticket"];
     let data = [
         &col1_data_plain,
         &col2_data_plain,

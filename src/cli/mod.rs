@@ -49,7 +49,7 @@ pub fn run(args: Args) -> Result<()> {
                 .trips_per_week
                 .or_else(|| {
                     config
-                        .get("defaults.total-trips-per-week")
+                        .get("defaults.trips-per-week")
                         .and_then(|v| v.as_u64().map(|n| n as u32))
                 })
                 .ok_or(anyhow::anyhow!("Missing trips-per-week"))?;

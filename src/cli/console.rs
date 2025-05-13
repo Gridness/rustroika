@@ -83,7 +83,7 @@ fn handle_console_command(cmd: ConsoleCommand) {
                 .trips_per_week
                 .or_else(|| {
                     config
-                        .get("defaults.total-trips-per-week")
+                        .get("defaults.trips-per-week")
                         .and_then(|v| v.as_u64().map(|n| n as u32))
                 })
                 .ok_or(anyhow::anyhow!("Missing trips-per-week"))
@@ -251,7 +251,7 @@ fn print_help() {
 
     {} <action>   - Manage configuration
       Actions:
-        set <key>=<value>    Set config value
+        set <key> <value>    Set config value
         remove <key>         Remove config value
         purge                Remove all config
         
@@ -260,9 +260,8 @@ fn print_help() {
     {}             - Show this help
     
     {}
-      run -t "(6+2)*3" -m 3070 -p 63
+      run -t "(6+2)*3" -m 3070 -p 63 --export csv
       config set defaults.monthly-cost 3070
-      export csv
     "#,
         "Available Commands:".bold(),
         "run".cyan(),

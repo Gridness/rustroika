@@ -9,8 +9,3 @@ license = "MIT OR Apache-2.0"
 authors = ["Ivan King"]
 
 [workspace.dependencies]
-clap = { version = "4.5.35", features = ["derive", "cargo"] }
-colored = "3.0.0"
-anyhow = "1.0"
-serde = { version = "1.0", features = ["derive"] }
-eframe = "0.32"

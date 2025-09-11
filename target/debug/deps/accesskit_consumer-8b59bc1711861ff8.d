@@ -1,0 +1,10 @@
+/home/oosama/rustroika/target/debug/deps/accesskit_consumer-8b59bc1711861ff8.d: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/tree.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/node.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/filters.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/iterators.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/text.rs
+
+/home/oosama/rustroika/target/debug/deps/libaccesskit_consumer-8b59bc1711861ff8.rmeta: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/tree.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/node.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/filters.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/iterators.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/text.rs
+
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/lib.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/tree.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/node.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/filters.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/iterators.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/accesskit_consumer-0.28.0/src/text.rs:

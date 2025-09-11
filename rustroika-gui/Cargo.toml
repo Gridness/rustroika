@@ -6,3 +6,5 @@ license.workspace = true
 authors.workspace = true
 
 [dependencies]
+rustroika-core = { path = "../rustroika-core" }
+eframe = "0.32"

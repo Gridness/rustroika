@@ -1,0 +1,12 @@
+/home/oosama/rustroika/target/debug/deps/tinystr-c34f268ad20df28e.d: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/macros.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/ascii.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/asciibyte.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/error.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/int_ops.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/unvalidated.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/ule.rs
+
+/home/oosama/rustroika/target/debug/deps/libtinystr-c34f268ad20df28e.rmeta: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/macros.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/ascii.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/asciibyte.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/error.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/int_ops.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/unvalidated.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/ule.rs
+
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/lib.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/macros.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/ascii.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/asciibyte.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/error.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/int_ops.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/unvalidated.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.1/src/ule.rs:

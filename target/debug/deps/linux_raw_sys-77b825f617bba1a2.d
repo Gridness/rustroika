@@ -1,0 +1,11 @@
+/home/oosama/rustroika/target/debug/deps/linux_raw_sys-77b825f617bba1a2.d: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/elf.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/errno.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/general.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/ioctl.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/prctl.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/system.rs
+
+/home/oosama/rustroika/target/debug/deps/liblinux_raw_sys-77b825f617bba1a2.rmeta: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/elf.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/errno.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/general.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/ioctl.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/prctl.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/system.rs
+
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/lib.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/elf.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/errno.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/general.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/ioctl.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/prctl.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.4.15/src/x86_64/system.rs:

@@ -1,0 +1,11 @@
+/home/oosama/rustroika/target/debug/deps/egui_glow-a7051a82e59922b4.d: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/painter.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/misc_util.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader_version.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/vao.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader/vertex.glsl /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader/fragment.glsl
+
+/home/oosama/rustroika/target/debug/deps/libegui_glow-a7051a82e59922b4.rmeta: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/painter.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/misc_util.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader_version.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/vao.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader/vertex.glsl /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader/fragment.glsl
+
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/lib.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/painter.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/misc_util.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader_version.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/vao.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader/vertex.glsl:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/egui_glow-0.32.2/src/shader/fragment.glsl:

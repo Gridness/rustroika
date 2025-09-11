@@ -1,0 +1,6 @@
+/home/oosama/rustroika/target/debug/deps/percent_encoding-a0e7f105f5199ee1.d: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/ascii_set.rs
+
+/home/oosama/rustroika/target/debug/deps/libpercent_encoding-a0e7f105f5199ee1.rmeta: /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/lib.rs /home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/ascii_set.rs
+
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/lib.rs:
+/home/oosama/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/ascii_set.rs:

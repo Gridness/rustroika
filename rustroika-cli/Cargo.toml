@@ -1,8 +1,26 @@
 [package]
 name = "rustroika-cli"
 version = "1.0.0"
+description = "Command-line interface for Rustroika transport cost calculator"
+homepage = "https://github.com/Gridness/rustroika"
+repository = "https://github.com/Gridness/rustroika"
+keywords = ["transport", "calculator", "cli"]
+categories = ["command-line-utilities"]
 edition.workspace = true
 license.workspace = true
 authors.workspace = true
 
+[[bin]]
+name = "rustroika"
+path = "src/main.rs"
+
 [dependencies]
+rustroika-core = { path = "../rustroika-core", features = ["discount-calculation"] }
+clap = { version = "4.5.35", features = ["derive", "cargo"] }
+colored = "3.0.0"
+
+[features]
+default = ["colored-output", "detailed-output"]
+detailed-output = ["rustroika-core/detailed-output"]
+colored-output = []
+advanced-calculations = ["rustroika-core/annual-pass"]

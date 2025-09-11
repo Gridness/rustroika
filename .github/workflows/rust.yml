@@ -2,7 +2,7 @@ name: Rust CI
 
 on:
   push:
-    branches: [main, 4-fix-cargo-deny-in-sast-stage-of-rust-pipeline]
+    branches: [main]
   pull_request:
     branches: [main]
 

@@ -1,12 +1,16 @@
-[package]
-name = "rustroika"
-version = "2.1.0"
-edition = "2024"
-license = "MIT OR Apache-2.0"
-description = "A utility to compare public transport costs"
-authors = ["Ivan 'oosama' King"]
+[workspace]
+resolver = "2"
+members = ["rustroika-cli","rustroika-core", "rustroika-gui"]
 
-[dependencies]
+[workspace.package]
+version = "3.0.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Ivan King"]
+
+[workspace.dependencies]
 clap = { version = "4.5.35", features = ["derive", "cargo"] }
-clap_derive = { version = "4.0.0-rc.1" }
 colored = "3.0.0"
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+eframe = "0.32"
